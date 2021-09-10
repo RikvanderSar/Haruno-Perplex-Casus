@@ -488,13 +488,15 @@ h1 {
     opacity: 0.5;
     cursor: grabbing;
     cursor: -webkit-grabbing;
-    /* transform: scale(2); */
 }
 
 /* ===========================
     FORM SECTION
 =============================*/
-
+.contactform {
+    position: relative;
+    overflow-x: hidden;
+}
     
 .contactform__layout {
     text-align: center;
