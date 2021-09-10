@@ -17,14 +17,17 @@ body {
     font-size: clamp(1rem, 2.3vw, 1.125rem);
     line-height: 24px;
     color: var(--primary-font-clr);
-    overflow-x: hidden;
+}
+
+.wrapper {
+    
+    
 }
 
 .container {
     max-width: 1300px;
     width: 90%;
     margin: auto;
-    /* overflow-x: hidden; */
 }
 
 section {
@@ -116,15 +119,17 @@ ul {
 /* ====================
     HEADER WITH NAV
 ======================*/
+/* The position relative and overflow-x: hidden are a solution for mobile browsers that do not render overflow hidden */
 .site-header {
     padding-top: 3em;
+    position: relative;
+    overflow-x: hidden;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .nav__logo--link {
@@ -203,6 +208,10 @@ nav {
 @media (min-width: 650px) {
     .hamburger {
         display: none;
+    }
+
+    .slider {
+        transform: translateX(0);
     }
 
     .nav__menu {
@@ -445,13 +454,13 @@ h1 {
     overflow-x: auto;
 }
 
-.blogposts::-webkit-scrollbar {
+/* .blogposts::-webkit-scrollbar {
     display: none;
 }
 
 .blogposts {
     scrollbar-width: none;
-}
+} */
 
 .blogpost__card {
     min-width: 300px;
@@ -507,7 +516,7 @@ h1 {
 }
 
 form {
-    margin-top: 1rem;
+    margin: 1rem;
     display: grid;
 }
 
