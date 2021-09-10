@@ -17,11 +17,8 @@ body {
     font-size: clamp(1rem, 2.3vw, 1.125rem);
     line-height: 24px;
     color: var(--primary-font-clr);
-}
-
-.wrapper {
-    
-    
+    /* position: relative; */
+    overflow-x: hidden;
 }
 
 .container {
@@ -119,11 +116,8 @@ ul {
 /* ====================
     HEADER WITH NAV
 ======================*/
-/* The position relative and overflow-x: hidden are a solution for mobile browsers that do not render overflow hidden */
 .site-header {
     padding-top: 3em;
-    position: relative;
-    overflow-x: hidden;
 }
 
 nav {
@@ -155,8 +149,9 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
-    top: 146px;
+    /* changed position from absolute to fixed. Seemed to fix overflow issues on mobile. */
+    position: fixed;
+    top: 148px;
     right: 0;
     left: 100%;
     bottom: 0;
