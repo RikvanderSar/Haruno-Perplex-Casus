@@ -454,13 +454,13 @@ h1 {
     overflow-x: auto;
 }
 
-/* .blogposts::-webkit-scrollbar {
+.blogposts::-webkit-scrollbar {
     display: none;
 }
 
 .blogposts {
     scrollbar-width: none;
-} */
+}
 
 .blogpost__card {
     min-width: 300px;
@@ -494,8 +494,8 @@ h1 {
     FORM SECTION
 =============================*/
 .contactform {
-    position: relative;
-    overflow-x: hidden;
+    /* position: relative;
+    overflow-x: hidden; */
 }
     
 .contactform__layout {
