@@ -4,8 +4,11 @@ Analyzing: 30min
 Gathering assets: 1,5hours
 Coding: 12.10 hours
 Updating imgages, testing, refactoring and uploading: 1,5 hours
++ 3 hours of fixing mobile browser issues and refactoring after uploading.
 
-Total: 15 hours 40 min
+Total: 18 hours 40 min
+
+
 
 ## Notes of first analysis
 ### Colors

@@ -1,11 +1,13 @@
 const toggleMenu = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav__menu');
+const body = document.querySelector('body');
 const hamburgerLine1 = document.querySelector('.hamburger__line1');
 const hamburgerLine2 = document.querySelector('.hamburger__line2');
 const hamburgerLine3 = document.querySelector('.hamburger__line3');
 
 toggleMenu.addEventListener('click', () => {
     nav.classList.toggle('slider');
+    body.classList.toggle('stopScroll');
     hamburgerLine1.classList.toggle('hamburger__transform--line1');
     hamburgerLine2.classList.toggle('hamburger__transform--line2');
     hamburgerLine3.classList.toggle('hamburger__transform--line3');
